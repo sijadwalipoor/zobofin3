@@ -4537,6 +4537,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
+    width: 12rem;
     padding-top: var(--bs-navbar-brand-padding-y);
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
