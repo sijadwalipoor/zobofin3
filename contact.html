@@ -20,12 +20,33 @@
     <link rel="stylesheet" href="button.css">
 
     <script src="flipcard.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adbbda9894.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+            var totalHeight = document.documentElement.scrollHeight;
+            var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            var scrollPercentage = (scrollTop + viewportHeight) / totalHeight * 100;
+
+            if (scrollPercentage >= 99) {
+                var arrowIcon = document.querySelector(".fa-solid.fa-arrow-up.fa-2xl");
+
+                // Add the "fa-bounce" class to the arrow icon
+                arrowIcon.classList.add("fa-bounce");
+
+                // Start the bounce animation for 3 seconds
+                setTimeout(function () {
+                    arrowIcon.classList.remove("fa-bounce"); // Remove the class after the animation
+                }, 5000);
+            }
+        });
+    </script>
+
     <link rel="stylesheet" href="diensten.css">
+
     <style>
         html {
             font-family: 'League Spartan', sans-serif !important;
@@ -246,8 +267,26 @@
 
         <!-- FOOTER -->
         <footer class="container">
-            <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p class="float-end"><a href="#">
+                    <i class="fa-solid fa-arrow-up fa-2xl"></i>
+                </a>
+            </p>
+            <p><strong>Zobofin.</strong> &middot; BTW ...</p>
+            <p>Zeveneiken &middot; 8760 Meulebeke</p>
+            <p>
+                <i class="fa fa-envelope fa" aria-hidden="true">
+                </i>
+                <a href="mailto:info@zobofin.be">
+                    Info@zobofin.be
+                </a>
+            </p>
+            <p>
+                <i class="fa fa-phone fa-1.8x" aria-hidden="true">
+                </i>
+                <a href="tel:0032 123 456 789" class="footerContainers">
+                    +32 4 11 22 33 44
+                </a>
+            </p>
         </footer>
     </main>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
