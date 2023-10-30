@@ -139,7 +139,20 @@
             display: block !important;
         }
     </style>
+    <style>
+        .image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
 
+        .image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -273,20 +286,13 @@
 
 
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <!-- Define the pattern using an image -->
-                        <defs>
-                            <pattern id="image-pattern-2" x="0" y="0" width="100%" height="100%">
-                                <!-- Adjust the width and height to match the rectangle -->
-                                <image href="af2.jpg" />
-                            </pattern>
-                        </defs>
-                        <!-- Fill the rect with the pattern -->
-                        <rect width="100%" height="100%" fill="url(#image-pattern-2)" />
-                    </svg>
+                    <div class="image-container">
+                        <div class="image" style="background-image: url('af2.jpg');"></div>
+                    </div>
+
                     <div class="container">
-                        <div class="carousel-caption text-start" style="background-color: rgb(33, 37, 41,.6); height: 8rem;">
+                        <div class="carousel-caption text-start"
+                            style="background-color: rgb(33, 37, 41,.6); height: 8rem;">
                             <div id="begroeting">
                                 <h1> WELKOM BIJ ZOBOFIN</h1>
                             </div>
@@ -302,7 +308,7 @@
                                 </a>
                             </div>
                             -->
-                            
+
                         </div>
                     </div>
                 </div>
@@ -310,8 +316,8 @@
 
 
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <defs>
                             <pattern id="image-pattern" x="0" y="0" width="100%" height="100%">
                                 <!-- Adjust the width and height to match the rectangle -->
@@ -320,7 +326,7 @@
                         </defs>
                         <rect width="100%" height="100%" fill="url(#image-pattern)" />
                     </svg>
-                    <div class="container" >
+                    <div class="container">
                         <div class="carousel-caption" style="background-color: rgb(33, 37, 41,.6); height: 8rem;">
                             <h1>uw partner in boekhoudkundige administratie</h1>
                         </div>
@@ -328,10 +334,10 @@
                 </div>
 
 
-                
+
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <defs>
                             <pattern id="image-pattern-3" x="0" y="0" width="100%" height="100%">
                                 <!-- Adjust the width and height to match the rectangle -->
