@@ -4572,7 +4572,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav .dropdown-menu {
-    position: static
+    position: static;
 }
 
 .navbar-text {
@@ -4590,7 +4590,8 @@ fieldset:disabled .btn {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
+    text-align: right;
 }
 
 .navbar-toggler {
