@@ -17,13 +17,15 @@
 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="button.css">
-
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="flipcard.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adbbda9894.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/diensten.css">
     <script>
         window.addEventListener("scroll", function () {
             var scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -44,18 +46,27 @@
             }
         });
     </script>
-
-    <link rel="stylesheet" href="diensten.css">
-
     <style>
         html {
             font-family: 'League Spartan', sans-serif !important;
         }
     </style>
 
-
-
     <style>
+        footer {
+            border-top: 1px solid white;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            background-color: #061d33;
+            height: 100%;
+            padding-bottom: 4rem;
+            margin-bottom: -3rem;
+        }
+
+        footer p {
+            color: white;
+        }
+
         .text-start {
             padding-left: 5rem;
         }
@@ -141,7 +152,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
 
 
 
@@ -227,7 +238,7 @@
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="cllapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html" aria-disabled="true">Home</a>
@@ -236,10 +247,15 @@
                             <a class="nav-link" aria-current="page" href="over-ons.html">Over ons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true" href="diensten.html">Diensten</a>
+                            <a class="nav-link " aria-disabled="true" href="diensten.html">Diensten</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-disabled="true" href="#">Contact</a>
+                            <a class="nav-link active" aria-disabled="true">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link" href="mailto:info@zobofin.be">
+                                <i class="fa-solid fa-envelope fa-lg" style="color: white;"></i> </i>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a target="_blank" class="nav-link" href="https://www.instagram.com/zobo.fin/">
@@ -247,7 +263,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_blank" class="nav-link" href="https://www.instagram.com/zobo.fin/">
+                            <a target="_blank" class="nav-link" href="#">
                                 <i class="fa-brands fa-square-facebook fa-lg" style="color: white;"></i>
                             </a>
                         </li>
@@ -266,18 +282,48 @@
 
         <div class="container marketing">
 
+            <h1 id="about-us-text" style="text-align: center;padding-top: 3rem;margin-bottom: -3rem;">Ons kantoor</h1>
 
-        </div>
+            <!-- Three columns of text below the carousel -->
 
+            <hr class="featurette-divider">
 
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <form action="#">
+                        <div class="formulier">
+                            <label for="Voornaam">voornaam:</label>
+                            <input type="text" name="voornaam" id="voornaam" required>
 
+                        </div>
+                        <div class="formulier">
+                            <label for="Achternaam">Achternaam:</label>
+                            <input type="text" name="Achternaam" id="Achternaam" required>
+                        </div>
+                        <div class="formulier">
+                            <label for="email">E-mailadres: </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="formulier">
+                            <label for="vraag">Vraag:</label><br>
+                            <textarea name="vraag" id="vraag" cols="80rem" rows="10"></textarea>
+                        </div>
+                        <div class="formulier">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40218.45372223242!2d3.24965104699091!3d50.94862342860207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3388ae2a739e7%3A0x405324d0c3536a50!2s8760%20Meulebeke!5e0!3m2!1snl!2sbe!4v1695151646828!5m2!1snl!2sbe"
+                        width="100%" height="500" style="border:0;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- /END THE FEATURETTES -->
+            <hr class="featurette-divider">
 
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
         </div><!-- /.container -->
-
 
         <!-- FOOTER -->
         <footer>
