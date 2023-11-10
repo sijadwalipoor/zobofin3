@@ -154,8 +154,6 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
 
-
-
 </head>
 
 <body>
@@ -254,18 +252,15 @@
                         </li>
                         <li class="nav-item">
                             <a target="_blank" class="nav-link" href="mailto:info@zobofin.be">
-                                <i class="fa-solid fa-envelope fa-lg" style="color: white;"></i> </i>
+                                <i class="fa-solid fa-envelope fa-lg" style="color: white;"></i>
                             </a>
-                        </li>
-                        <li class="nav-item">
                             <a target="_blank" class="nav-link" href="https://www.instagram.com/zobo.fin/">
                                 <i class="fa-brands fa-instagram fa-lg" style="color: white;"></i>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_blank" class="nav-link" href="#">
+                            <a target="_blank" class="nav-link">
                                 <i class="fa-brands fa-square-facebook fa-lg" style="color: white;"></i>
                             </a>
+                            <!-- Individual <a> elements for each icon -->
                         </li>
                     </ul>
                 </div>
@@ -290,12 +285,11 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <form action="#">
+                    <form onsubmit="event.preventDefault(); send();">
                         <div class="formulier">
                             <label for="Voornaam">VOORNAAM*</label>
                             <input type="text" name="voornaam" id="voornaam" required>
                         </div>
-
                         <div class="formulier">
                             <label for="Achternaam">ACHTERNAAM*</label>
                             <input type="text" name="Achternaam" id="Achternaam" required>
@@ -310,6 +304,7 @@
                         </div>
                         <div class="formulier">
                             <input type="submit" id="button">
+                            <button onclick="send()"></button>
                         </div>
                     </form>
                 </div>

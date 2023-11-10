@@ -109,20 +109,17 @@
 /* -------------- */
 
 form {
-    background-color: rgb(6, 29, 51, .6);
     padding: 4px 30px;
 }
 
 form label {
     display: block;
-    color: white;
 }
 
 form input,
 form textarea {
     width: 100%;
 }
-
 
 #button {
     background-color: rgb(6, 29, 51);

@@ -83,6 +83,8 @@
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg: #fff;
     --bs-body-bg-rgb: 255, 255, 255;
+    --bs-form-bg-rgb: rgb(6, 29, 51, .6);
+    --bs-form-label-color: white;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0, 0, 0;
     --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -134,6 +136,8 @@
     --bs-body-color-rgb: 222, 226, 230;
     --bs-body-bg: #061d33;
     --bs-body-bg-rgb: 33, 37, 41;
+    --bs-form-bg-rgb: white;
+    --bs-form-label-color: black;   
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255, 255, 255;
     --bs-secondary-color: rgba(222, 226, 230, 0.75);
@@ -182,6 +186,7 @@
     --bs-form-valid-border-color: #75b798;
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f
+    -
 }
 
 *,
@@ -4521,6 +4526,15 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
+}
+
+form {
+    background-color: var(--bs-form-bg-rgb);
+}
+
+form {
+    display: block;
+    color: var(--bs-form-label-color);
 }
 
 .navbar>.container,
